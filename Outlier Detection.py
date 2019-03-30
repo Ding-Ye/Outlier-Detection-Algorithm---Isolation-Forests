@@ -58,7 +58,7 @@ df.tail(3)
 
 # In[5]:
 
-X = df.drop(['ID'],['target'], axis = 1)
+X = df.drop(['ID','target'], axis = 1)
 Y = df.target.values
 #Cross - Validation - split the data into 70% training and the remainder for testing the model
 from sklearn.cross_validation import train_test_split
